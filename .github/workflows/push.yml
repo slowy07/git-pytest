@@ -1,0 +1,14 @@
+on: push
+
+name: on push git pytest
+jobs:
+  githubActionsPytest:
+    name: github action pytest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: github actions for pytesting
+        uses: slowy07/git-pytest@maub
+        with:
+          args: pytest -h
+          
