@@ -9,5 +9,3 @@ jobs:
       - uses: actions/checkout@main
       - name: github actions for pytesting
         uses: slowy07/git-pytest@main
-        with:
-          args: pytest --version
