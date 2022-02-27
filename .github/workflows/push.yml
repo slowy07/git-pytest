@@ -10,4 +10,4 @@ jobs:
       - name: github actions for pytesting
         uses: slowy07/git-pytest@main
         with:
-          args: pytest -h
+          args: pytest --version
