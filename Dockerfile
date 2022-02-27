@@ -12,4 +12,4 @@ RUN python --version ; pip --version ; pytest --version
 
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sh","/entrypoint.sh"]
